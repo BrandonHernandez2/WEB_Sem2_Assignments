@@ -1,0 +1,1 @@
+const building = {color:"white", location:"Indiana", name:"home" }
