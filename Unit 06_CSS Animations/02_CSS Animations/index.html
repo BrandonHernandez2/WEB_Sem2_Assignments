@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bluei{
+            from {background-color: blue; left: 200px; top: 0px;}
+            to {background-color: purple; left: 300px; top: 0px;}   
+        }
+        @keyframes redi{
+            from {background-color: red; left: 400px; top: 0px;}
+            to {background-color: purple; left: 200px; top: 0px;}
+        }
+
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            animation-name: bluei;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            float: left;
+        }
+
+        #div2{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: redi;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+</body>
+</html>
