@@ -85,10 +85,23 @@
 
 
         <div id="block3">
-            <p>Square</p>
+            <p>Text</p>
             <div id="controls3">
-                <label for="S"></label>
-                
+                <label for="wordStartx">Word Start (on x axis)</label><br>
+                <input type="number" name="wordStartx" id="wordStartx">
+                <br>
+
+                <label for="wordStarty">Word Start (on y axis)</label><br>
+                <input type="number" name="wordStarty" id="wordStarty">
+                <br>
+
+                <label for="word">Text You Want Displayed</label><br>
+                <input type="text" name="word" id="word">
+                <br>
+                <br>
+                <button type="button" onclick="drawWord()">Draw Word</button>
+                <br>
+                <br>                
             </div>
             <div id="canvas3">
                 <canvas id="myCanvas3" , width="200" height="200" style="border:1px solid #000000;">

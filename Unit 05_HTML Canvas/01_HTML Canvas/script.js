@@ -45,3 +45,16 @@ function drawLine() {
     // Stroke it (Do the Drawing)
     ctx.stroke();
 }
+
+function drawWord(){
+    let startX = +document.getElementById("wordStartx").value;
+    let startY = +document.getElementById("wordStarty").value;
+    let Tword = document.getElementById("word").value;
+
+    const canvas = document.getElementById("myCanvas3");
+    const ctx = canvas.getContext("2d")
+
+    ctx.font = "50px Arial";
+    ctx.strokeText(Tword, startX, startY)
+
+}
