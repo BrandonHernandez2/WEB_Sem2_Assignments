@@ -1,4 +1,4 @@
-const numbers = []
+const numbers = [];
 
 for(let i = 0; i < 10; i++){
     let num = Math.floor(Math.random() * 10) + 1;
@@ -7,6 +7,14 @@ for(let i = 0; i < 10; i++){
 
 document.getElementById("unsorted").innerHTML = numbers;
 
-//YOUDO:  finish the sort and print to the sorted id
-let numbersSorted = numbers.sort()
+let numbersSorted = numbers.sort();
 document.getElementById("sorted").innerHTML = numbersSorted;
+
+const odds = numbers.filter(RemoveEvens);
+
+document.getElementById("odd").innerHTML = odds;
+
+function RemoveEvens(value, index, array) {
+  if(value % 2 != 0)
+  return value
+}
