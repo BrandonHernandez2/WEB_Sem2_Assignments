@@ -1,7 +1,7 @@
 const currentDate = new Date();
 const month = currentDate.getMonth();
-
-switch(month){
+const year = currentDate.getFullYear();
+switch (month) {
     case 0:
         document.getElementById("month").innerHTML = "January";
         break;
@@ -39,7 +39,7 @@ switch(month){
         document.getElementById("month").innerHTML = "December";
         break;
     default:
-        document.getElementById('month').innerHTML = "Unkown Month";
+        document.getElementById("month").innerHTML = "December";
+
         break;
 }
-
