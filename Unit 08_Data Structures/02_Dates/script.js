@@ -43,8 +43,12 @@ switch (month) {
         break;
 }
 
+<<<<<<< HEAD
 document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
 
+=======
+document.getElementById("month").innerHTML = document.getElementById("month").innerHTML + " " + year;
+>>>>>>> 61305b4d215c2a16a3d90ca8557b6bf8257ca04e
 
 
 const calendarMap = new Map([
@@ -83,11 +87,23 @@ const calendarMap = new Map([
     [33, "5-5"],
     [34, "5-6"],
     [35, "5-7"],
+<<<<<<< HEAD
 ])
+=======
+    [36, "6-1"],
+    [37, "6-2"],
+    [38, "6-3"],
+    [39, "6-4"],
+    [40, "6-5"],
+    [41, "6-6"],
+    [42, "6-7"]
+]);
+>>>>>>> 61305b4d215c2a16a3d90ca8557b6bf8257ca04e
 
 const firstDayDate = new Date(year, month, 1);
 const firstDayNumber = firstDayDate.getDay() + 1;
 const lastDayofMonth = new Date(year, month + 1, 1);
+<<<<<<< HEAD
 lastDayofMonth.setDate(lastDayofMonth.getDate() -  1)
 const lastDayofMonthNumber = lastDayofMonth.getDate();
 
@@ -103,5 +119,19 @@ for(let i = 1; i <= 35; i++){
     if (check >= 1 && check <= lastDayofMonthNumber){
         let id = calendarMap.get(i);
         document.getElementById(id).innerHTML = check
+=======
+lastDayofMonth.setDate(lastDayofMonth.getDate() - 1);
+const lastDayOfMonthNumber = lastDayofMonth.getDate();
+console.log(lastDayOfMonthNumber);
+
+for (let i = 1; i <= 42; i++) {
+    let check = i - firstDayNumber + 1;
+    let id = calendarMap.get(i);
+
+    if (check >= 1 && check <= 31) {
+        document.getElementById(id).innerHTML = check;
+    } else {
+        document.getElementById(id).innerHTML = "";
+>>>>>>> 61305b4d215c2a16a3d90ca8557b6bf8257ca04e
     }
 }
