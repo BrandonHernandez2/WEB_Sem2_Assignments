@@ -114,7 +114,16 @@ function generatePrevMonth(){
     month--;
     if(month === -1){
         month = 11;
-        year--;
+        year= year - 1;
+    }
+    generateCalendar(year, month);
+}
+
+function generateNextMonth(){
+    month += 1;
+    if(month > 11){
+        year += 1;
+        month = 0;
     }
     generateCalendar(year, month);
 }
