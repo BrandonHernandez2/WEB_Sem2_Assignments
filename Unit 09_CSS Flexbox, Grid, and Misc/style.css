@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  background-color: purple;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#two{
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  font-size: 100px;
+}
+
+#three{
+  background-color: Blue;
+  width: 50px;
+  height: 100px;
+
+}
