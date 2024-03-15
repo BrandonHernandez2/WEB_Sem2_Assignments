@@ -1,0 +1,25 @@
+.GRID{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;    
+}
+
+.GRIDSTUFF{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.GRIDSTUFF2{
+    background-color: rgba(255, 255, 255, 0.8);
+    animation-name: change;
+    animation-duration: 5s;
+}
+
+@keyframes change{
+    from{background-color:  rgba(255, 255, 255, 0.8);}
+    to{background-color: red;}
+}
