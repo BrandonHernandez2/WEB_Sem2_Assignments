@@ -1,0 +1,18 @@
+.img2{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.img3{
+    width: 100px;
+    height: 100px;
+    object-fit: none;
+    object-position: 60% 100%;    
+}
+
+.img4{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
