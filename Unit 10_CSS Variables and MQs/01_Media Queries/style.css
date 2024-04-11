@@ -1,0 +1,18 @@
+.wrapper{overflow: auto;}
+
+#main{
+    margin-right: 4px;
+}
+
+#floatToRight{
+    float: none;
+    width: auto;
+}
+
+@media screen and (min-width: 480px) {
+    #floatToRight{width: 200px; float: right;}
+    #main{margin-right: 216px;}
+    body{
+        background-color: blue;
+    }
+}
