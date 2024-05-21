@@ -36,7 +36,7 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-#Intro{
+#Intro, p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
